@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    text-align: center;
+    color: #FFF;
+    background: #05406e;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.name {
+    color: #ffeb3b;
+}
+
+nav {
+    grid-column: 1 / 4;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+
+nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 1em 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    color: #ccc
+}
+
+main {
+    display: grid;
+    grid-template: auto / auto 400px;
+    grid-gap: 0px;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid #afafaf;
+    margin: 30px;
+}
+
+.card-header {
+    text-align: center;
+    padding: 20px 0px;
+    color: #FFF;
+    background: #05406e;
+    font-size: 22px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 15px;
+}
+
+
+.aboutme {
+    width: 100%;
+    padding: 10px 0px !important;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    font-size: 20px;
+}
+
+.aboutme img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.aboutme p {
+    padding: 10px;
+}
+
+.aboutme2 {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #333;
+}
+
+.aboutme3 {
+    width: 100%;
+    padding: 10px 0px !important;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    font-size: 20px;
+}
+
+.aboutme3 p {
+    padding: 10px;
+}
+
+.aboutme3 img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+
+footer {
+    background: #05406e;
+    color: #FFF;
+    padding: 1rem 0px;
+    text-align: center;
+    grid-column: 1 / 4;
+}
