@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ramon Andrade - Place">
+    <meta name="author" content="Ramon Andrade">
+    <title>WDD 131 - Dynamic Web Fundamentals by Ramon Andrade - Place</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Spain</h1>
+    </header>
+
+    <main>
+
+        <section class="image">
+            <picture>
+                <source media="(max-width:768px)" srcset="images/spain_small.webp">
+                <img src="images/spain.webp" alt="Spain">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <div class="side1">Area:</div>
+                    <div class="side2">506,030 sq km</div>
+                </li>
+                <li>
+                    <div class="side1">Population:</div>
+                    <div class="side2">47,902,353</div>
+                </li>
+                <li>
+                    <div class="side1">Capital:</div>
+                    <div class="side2">Madrid</div>
+                </li>
+                <li>
+                    <div class="side1">Languages:</div>
+                    <div class="side2">Spanish, Catalan, Basque, Galician and Valencian</div>
+                </li>
+                <li>
+                    <div class="side1">Currency:</div>
+                    <div class="side2">Euro</div>
+                </li>
+                <li>
+                    <div class="side1">Time Zone:</div>
+                    <div class="side2">UTC+1</div>
+                </li>
+                <li>
+                    <div class="side1">Calling Code:</div>
+                    <div class="side2">+34</div>
+                </li>
+                <li>
+                    <div class="side1">Internet TLD:</div>
+                    <div class="side2">.es</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <img src="images/cloud_sky_summer_sun_sunshine_icon.svg" class="weather_icon" alt="Weather icon"></h2>
+            <ul>
+                <li>
+                    <div class="side1">Temperature:</div>
+                    <div class="side2" id="weather_temperature"></div>
+                </li>
+                <li>
+                    <div class="side1">Conditions:</div>
+                    <div class="side2" id="weather_conditions"></div>
+                </li>
+                <li>
+                    <div class="side1">Wind:</div>
+                    <div class="side2" id="weather_wind"></div>
+                </li>
+                <li>
+                    <div class="side1">Wind Chill:</div>
+                    <div class="side2" id="weather_windchill"></div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Ramon Andrade - ES
+        </p>
+        <p>
+            Last modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
