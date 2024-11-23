@@ -32,11 +32,12 @@
 		width: 200px;
 	}
 
-	.weather_icon {
+	.weather h2::after {
+		display: inline-block;
 		width: 30px;
-		vertical-align: middle;
-		display: inline !important;
-		margin: 0 !important;
+		height: 30px;
+		margin-left: 10px;
+		vertical-align: sub;
 	}
 
 	.data ul,
