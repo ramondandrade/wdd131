@@ -51,6 +51,9 @@ main {
     border-radius: 2px;
 }
 
+.weather_icon {
+    display: none;
+}
 
 .weather h2::after {
     content: url('../images/cloud_sky_summer_sun_sunshine_icon.svg');

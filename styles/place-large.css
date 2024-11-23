@@ -32,7 +32,12 @@
 		width: 200px;
 	}
 
+	
 	.weather h2::after {
+		display: none;
+	}
+
+	.weather_icon {
 		display: inline-block;
 		width: 30px;
 		height: 30px;
