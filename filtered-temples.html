@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ramon Andrade - Temple Album">
+    <meta name="author" content="Ramon Andrade">
+    <title>WDD 131 -  Dynamic Web Fundamentals by Ramon Andrade - Temple Album</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Temple Album</h1>
+        <nav class="nav_bar">
+            <a href="javascript:void(0)" onclick="setTemplesAlbum('');setMenu(this);" class="nav-link active">Home</a>
+            <a href="javascript:void(0)" onclick="setTemplesAlbum('old');setMenu(this);" class="nav-link">Old</a>
+            <a href="javascript:void(0)" onclick="setTemplesAlbum('new');setMenu(this);" class="nav-link">New</a>
+            <a href="javascript:void(0)" onclick="setTemplesAlbum('large');setMenu(this);" class="nav-link">Large</a>
+            <a href="javascript:void(0)" onclick="setTemplesAlbum('small');setMenu(this);" class="nav-link">Small</a>
+        </nav>
+
+        <button type="button" id="menu" role="button" aria-label="Menu"></button>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Main</h2>
+            <div id="temples_images" class="images">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Ramon Andrade - ES
+        </p>
+        <p>
+            Last modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
