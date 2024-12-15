@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Natal's Tours, buggy tours in Natal, RN - Brazil">
+    <meta name="author" content="Ramon Andrade">
+    <title>Contact - Natal's Tours | Buggy and experiences tours in Natal, RN - Brazil</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <script src="scripts/site.js" defer></script>
+</head>
+
+<body onload="setOptionsTour()">
+    <header>
+
+        <h1>Natal's Tours</h1>
+        <nav class="nav_bar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="tours.html" class="nav-link">Tours</a>
+            <a href="contact.html" class="nav-link active">Book Now</a>
+        </nav>
+
+        <button type="button" id="menu" role="button" aria-label="Menu"></button>
+
+    </header>
+
+    <main>
+
+        <div class="hero_tours">
+            <h1>Book now your tour</h1>
+        </div>
+
+        <div class="form-container">
+
+            <form method="get" action="form-submit.html">
+                <label for="tour-name">Tour<span id="price"></span></label>
+                <select id="tour-name" name="tour-name" required="required" onchange="setTourPrice()">
+                    <option value="" disabled selected>Choose a tour ...</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required="required">
+            
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required="required">
+
+                <label for="name">Your Email</label>
+                <input type="email" id="email" name="email" required="required">
+
+                <br><br>
+                <button type="submit" class="contact_us_button">Submit</button>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Natal's Tours
+        </p>
+        <p>
+            Last modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

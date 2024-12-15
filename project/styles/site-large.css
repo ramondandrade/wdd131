@@ -1,0 +1,52 @@
+
+
+@media (min-width: 768px) {
+
+    header{
+        grid-template-columns: 100%;
+		text-align:center;
+    }
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.nav_bar {
+		flex-direction: row;
+        grid-column: 1;
+		margin: 10px;
+		border-radius:10px;
+		background: var(--color1);
+	}
+
+	.nav_bar a {
+		display: block;
+		flex: 1 1 100%;
+        font-size:16px;
+	}
+
+    .rides_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+	.hero {
+		grid-template-columns: 1fr 300px;
+	}
+
+	.hero .side1 h1 {
+		width:300px;
+		font-size:44px;
+		text-align:right;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+    .rides_list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
